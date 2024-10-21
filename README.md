@@ -1,5 +1,10 @@
 # Introduction
 This project is an interactive 2D game implemented in Python and [Processing](https://processing.org), inspired by the classic arcade game, [Digger](https://en.wikipedia.org/wiki/Digger_(video_game)). In this game, players explore a dynamically generated underground maze, collecting emeralds and gold while evading and eliminating enemies. The gameplay is designed to challenge both quick reflexes and strategic thinking, appealing to casual and dedicated gamers alike. The game was developed as a final project for the "Intro to CS" class.
+
+<img width="908" alt="image" src="https://github.com/user-attachments/assets/dde55747-7f16-4d26-a8f2-ba7f21eb16ec">    
+
+<br> **Checkout the [video](https://youtube.com/shorts/g7NrTtpwd7U?feature=share) of the gameplay!**
+
 # Key Features
 
 ### 1. Scalable Levels & Customization
@@ -16,6 +21,8 @@ One of the key highlights is the intelligent enemy movement system. Enemies, or 
 ### 3. Dynamic Gameplay Mechanics
 
 *	Gold Bag Physics: Players can dig through the ground and drop gold bags onto enemies. Bags, once dropped, follow gravity-based mechanics—falling through empty vertical tunnels and breaking open to release gold when they land. This mechanic adds layers of strategy: players must avoid being squashed while trying to trap enemies with falling bags.
+
+* Physics Calculations: To calculate the movement of the bag, physics formulas are used. When the digger hits the side of the bag, its initial velocity is calculated by the law of momentum conservation, allowing the system to account for whether the bag was already in motion. The bag’s subsequent positions are determined by applying deceleration, gradually reducing its speed. Similarly, when the bag falls vertically, its speed increases according to gravity, providing realistic movement behavior as it accelerates during the fall.
 
 ### 4. In-Game Progression and Saving
 
@@ -52,5 +59,5 @@ The player starts each level in a pre-determined underground maze. The goal is t
 
 # Potential for Further Development
 
-	* Multiplayer Mode: Introducing a competitive or cooperative mode for multiple players to engage simultaneously.
-	*	Power-ups & New Obstacles: Adding different kinds of bonuses or hindrances in later levels (e.g., teleporters, traps).
+* Multiplayer Mode: Introducing a competitive or cooperative mode for multiple players to engage simultaneously.
+*	Power-ups & New Obstacles: Adding different kinds of bonuses or hindrances in later levels (e.g., teleporters, traps).
